@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VOCA</string>
+    <string name="kakao_app_key">c7bb222846dfa69515e1a4ac0464c2e5</string>
+    <string name="facebook_app_id">252798468547112</string>
+</resources>

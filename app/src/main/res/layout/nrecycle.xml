@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="100dp"
+            android:id="@+id/noticnum"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/notietitle"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/notidate"
+            android:layout_width="85dp"
+            android:layout_height="100dp"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_weight="3"
+            android:gravity="center"
+            />
+
+        <RelativeLayout
+            android:id="@+id/notibut"
+            android:layout_width="48dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            >
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/triangle"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+        android:id="@+id/notiexpandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/linear"
+        android:orientation="vertical"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        >
+        <TextView
+            android:id="@+id/noticontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="63dp"
+    android:paddingLeft="23dp"
+    android:paddingRight="23dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ggam.jjac.voca.Kaka5.LoginActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="41.1sp"
+            android:textColor="#1e9cd8"
+            android:lineSpacingExtra="4.3sp"
+            android:layout_gravity="center"
+            android:text="오늘 또" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="41.1sp"
+            android:textColor="#1e9cd8"
+            android:lineSpacingExtra="4.3sp"
+            android:layout_gravity="center"
+            android:text="VOCA" />
+    </LinearLayout>
+
+    <com.kakao.usermgmt.LoginButton
+        android:id="@+id/bt_kakao_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/tv_custom_terms"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_custom_terms"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:textSize="13.6sp"
+        android:textColor="#9c9d9e"
+        android:lineSpacingExtra="6.5sp"/>
+
+</RelativeLayout>

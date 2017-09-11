@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="16dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/voca_card"
+        android:layout_width="310dp"
+        android:layout_height="163dp"
+        card:cardCornerRadius="3dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/front"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/text"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/wordclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="37dp"
+                android:background="@drawable/round"
+                android:gravity="center"
+                android:lineSpacingExtra="5.7sp"
+                android:text="ad"
+                android:textColor="#ffffff"
+                android:textSize="22.8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <ImageButton
+                android:id="@+id/myvoca_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@android:drawable/ic_delete"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:id="@+id/mean1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lineSpacingExtra="4sp"
+                android:text="-에 대하여"
+                android:textColor="@color/text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mean2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lineSpacingExtra="4sp"
+                android:text="-에 대하여"
+                android:textColor="@color/text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mean3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lineSpacingExtra="4sp"
+                android:text="-에 대하여"
+                android:textColor="@color/text"
+                android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/goto_dic"
+                    android:layout_width="133sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/explain_button" />
+
+        </LinearLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/back"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="0dp">-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="30dp"-->
+        <!--android:id="@+id/word_back"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/mean1"-->
+        <!--android:textSize="30dp"-->
+        <!--android:layout_below="@+id/word_back"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+        <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/myvoca_btn"-->
+        <!--android:text="내 단어장 추가"-->
+        <!--android:layout_alignBaseline="@+id/goto_dic"-->
+        <!--android:layout_alignBottom="@+id/goto_dic"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginEnd="61dp" />-->
+
+        <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/goto_dic"-->
+        <!--android:text="단어 설명 보기"-->
+        <!--android:layout_below="@+id/mean1"-->
+        <!--android:layout_toStartOf="@+id/myvoca_btn"-->
+        <!--android:layout_marginEnd="44dp" />-->
+        <!--</RelativeLayout>-->
+    </android.support.v7.widget.CardView>
+</FrameLayout>

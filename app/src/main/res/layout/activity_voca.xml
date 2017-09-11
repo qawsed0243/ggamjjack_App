@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cor_card"
+    android:background="@drawable/element_back">
+<!-- 참고: https://github.com/myinnos/AlphabetIndex-Fast-Scroll-RecyclerView -->
+<in.myinnos.alphabetsindexfastscrollrecycler.IndexFastScrollRecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/index_view"
+    android:paddingTop="138dp">
+</in.myinnos.alphabetsindexfastscrollrecycler.IndexFastScrollRecyclerView>
+</android.support.design.widget.CoordinatorLayout>

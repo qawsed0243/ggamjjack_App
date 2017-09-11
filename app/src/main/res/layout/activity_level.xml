@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text"
+    tools:context="com.ggam.jjac.voca.Frag.TabFragment3">
+
+    <View
+        android:layout_width="393dp"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_gravity="bottom" />
+    <FrameLayout
+        android:layout_width="313dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="34dp"
+        android:background="#edf1f6"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/illust"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18.9sp"
+                android:textColor="#919191"
+                android:lineSpacingExtra="10.2sp"
+                android:text="시험 난이도를 선택해 주세요!"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="120dp"
+            android:id="@+id/radiogroup">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="48dp">
+
+                <RadioButton
+                    android:text="수능초급"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton1"
+                    android:textSize="25.6sp"
+                    android:textColor="#636464"
+                    android:lineSpacingExtra="1.1sp"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="33dp"/>
+
+                <RadioButton
+                    android:text="수능중급"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton2"
+                    android:textSize="25.6sp"
+                    android:textColor="#636464"
+                    android:lineSpacingExtra="1.1sp"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="48dp">
+
+                <RadioButton
+                    android:text="수능고급"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton3"
+                    android:textSize="25.6sp"
+                    android:textColor="#636464"
+                    android:lineSpacingExtra="1.1sp"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="33dp"/>
+
+                <RadioButton
+                    android:text="토익초급"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton4"
+                    android:textSize="25.6sp"
+                    android:textColor="#636464"
+                    android:lineSpacingExtra="1.1sp"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:text="토익중급"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton5"
+                    android:textSize="25.6sp"
+                    android:textColor="#636464"
+                    android:lineSpacingExtra="1.1sp"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:layout_marginRight="33dp"/>
+
+                <RadioButton
+                    android:text="토익고급"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton6"
+                    android:textSize="25.6sp"
+                    android:textColor="#636464"
+                    android:lineSpacingExtra="1.1sp"
+                    android:layoutDirection="rtl"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start" />
+            </LinearLayout>
+        </RadioGroup>
+
+        <Button
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="90dp"
+            android:layout_width="132dp"
+            android:layout_height="39dp"
+            android:textSize="20.9sp"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="-5.5sp"
+            android:gravity="center"
+            android:text="확인"
+            android:id="@+id/Exam_btn"
+            android:background="@drawable/round"
+            android:layout_centerHorizontal="true" />
+    </FrameLayout>
+</RelativeLayout>

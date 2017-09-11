@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "596926247379",
+    "firebase_url": "https://ggamjjac.firebaseio.com",
+    "project_id": "ggamjjac",
+    "storage_bucket": "ggamjjac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596926247379:android:94be1fae62c13985",
+        "android_client_info": {
+          "package_name": "com.ggam.jjac.voca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596926247379-ob0v9f5dl9nmvepa2k1a6lfrcadkcv3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACqYoEWIIf5TzUSMAzktkkrkIs4S7csm0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

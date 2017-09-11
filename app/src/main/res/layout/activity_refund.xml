@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/live_layout"
+    android:background="@color/white"
+    xmlns:sl="http://schemas.android.com/apk/res-auto">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        sl:scale_base_height="1550"
+        sl:scale_base_width="1080">
+
+        <TextView
+            android:id="@+id/textViewPointOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="포인트아웃"
+            sl:scale_height="100"
+            sl:scale_left="30"
+            sl:scale_textsize="50"
+            sl:scale_top="0"
+            sl:scale_width="270" />
+
+
+        <ImageView
+            android:id="@+id/imageView_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_b"
+            android:text="W"
+            sl:scale_height="100"
+            sl:scale_left="540"
+            sl:scale_top="300"
+            sl:scale_width="100" />
+
+
+        <TextView
+            android:id="@+id/textViewPointNow_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="현재 포인트"
+            android:textColor="#209cd8"
+            sl:scale_height="300"
+            sl:scale_left="0"
+            sl:scale_textsize="90"
+            sl:scale_top="200"
+            sl:scale_width="540" />
+
+        <TextView
+            android:id="@+id/textViewMyPoint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#209cd8"
+            sl:scale_height="300"
+            sl:scale_left="540"
+            sl:scale_textsize="120"
+            sl:scale_top="200"
+            sl:scale_width="540" />
+
+
+        <TextView
+            android:id="@+id/textViewOutPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="환금 금액"
+            sl:scale_height="100"
+            sl:scale_left="0"
+            sl:scale_textsize="40"
+            sl:scale_top="650"
+            sl:scale_width="400" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTextMoney"
+            android:lines="1"
+            android:singleLine="true"
+            android:maxLength="8"
+            android:hint="10000"
+            android:digits="0123456789"
+            sl:scale_textsize="35"
+            sl:scale_top="650"
+            sl:scale_width="550"
+            sl:scale_left="400"
+            sl:scale_height="100"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewAccountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="예금 주"
+            sl:scale_height="100"
+            sl:scale_left="0"
+            sl:scale_textsize="40"
+            sl:scale_top="750"
+            sl:scale_width="400" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditTextName"
+            android:lines="1"
+            android:singleLine="true"
+            android:maxLength="8"
+            android:hint="홍길동"
+            sl:scale_textsize="35"
+            sl:scale_top="750"
+            sl:scale_width="550"
+            sl:scale_left="400"
+            sl:scale_height="100"
+            />
+
+        <TextView
+            android:id="@+id/textViewBankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="은행명"
+            sl:scale_height="100"
+            sl:scale_left="0"
+            sl:scale_textsize="40"
+            sl:scale_top="850"
+            sl:scale_width="400" />
+
+        <Spinner
+            android:id="@+id/sbank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/banks"
+            android:spinnerMode="dialog"
+            sl:scale_height="100"
+            sl:scale_left="400"
+            sl:scale_textsize="35"
+            sl:scale_top="850"
+            sl:scale_width="550"
+            />
+
+        <TextView
+            android:id="@+id/textViewAccountNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="계좌번호"
+            sl:scale_height="100"
+            sl:scale_left="0"
+            sl:scale_textsize="40"
+            sl:scale_top="950"
+            sl:scale_width="400" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditAccountNo"
+            android:lines="1"
+            android:singleLine="true"
+            android:digits="0123456789"
+            sl:scale_textsize="35"
+            sl:scale_top="950"
+            sl:scale_width="550"
+            sl:scale_left="400"
+            sl:scale_height="100"
+            />
+
+
+
+        <TextView
+            android:id="@+id/textViewExplain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="예금주와 계좌번호가 일치해야만 정상 환급이 가능합니다.\n 계좌번호는 -을 제외한 숫자만 입력하세요."
+            android:textColor="@android:color/holo_red_dark"
+
+            sl:scale_height="100"
+            sl:scale_left="100"
+            sl:scale_textsize="30"
+            sl:scale_top="1050"
+            sl:scale_width="880" />
+
+
+
+        <Button
+            android:id="@+id/buttonPointOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_a"
+            android:text="포인트 아웃"
+            sl:scale_height="130"
+            sl:scale_left="50"
+            sl:scale_textsize="50"
+            sl:scale_top="1280"
+            sl:scale_width="1000"
+            android:onClick="onClickPointOut"
+            />
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+</LinearLayout>
