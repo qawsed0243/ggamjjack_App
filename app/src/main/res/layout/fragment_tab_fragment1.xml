@@ -83,11 +83,11 @@
             android:layout_height="wrap_content"
             android:textColor="#484848"
             tools:text="오늘의 단어"
-            android:id="@+id/textView6"
-            sl:scale_left="15"
-            sl:scale_textsize="15"
-            sl:scale_top="227"
-            sl:scale_height="16"/>
+            android:id="@+id/today_voca"
+            sl:scale_left="18"
+            sl:scale_textsize="16"
+            sl:scale_top="220"
+            sl:scale_height="30"/>
 
         <FrameLayout
             android:layout_width="wrap_content"

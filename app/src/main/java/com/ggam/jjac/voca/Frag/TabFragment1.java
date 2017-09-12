@@ -50,7 +50,7 @@ public class TabFragment1 extends Fragment {
 
     Context c;
     LinearLayout point_linear;
-    TextView point_cur;
+    TextView point_cur, today_voca;
     TextView voca,mean1,mean2,mean3, gram;
 //    LinearLayout layout2;
 //    FrameLayout layout1;
@@ -64,6 +64,7 @@ public class TabFragment1 extends Fragment {
         View view = inflater.inflate(R.layout.fragment_tab_fragment1, container, false);
         point_linear=(LinearLayout) view.findViewById(R.id.linear);
         point_cur=(TextView)view.findViewById(R.id.pointcur);
+        today_voca = (TextView) view.findViewById(R.id.today_voca);
         c = getContext();
         voca=(TextView)view.findViewById(R.id.mainvoca);
         mean1=(TextView)view.findViewById(R.id.mainvocamean1);
@@ -74,6 +75,8 @@ public class TabFragment1 extends Fragment {
 //        layout2=(LinearLayout)view.findViewById(R.id.layout2);
         //point_cur=(TextView) view.findViewById(R.id.pointcur);
 
+        today_voca.setText("오늘의 단어");
+        today_voca.setTextSize(16);
 
         //포인트 버튼 눌렀을 때 포인트 사용내역 관련 액티비티실행
         point_linear.setOnClickListener(new View.OnClickListener(){
