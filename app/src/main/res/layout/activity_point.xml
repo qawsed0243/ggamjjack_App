@@ -2,128 +2,137 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.CardView
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
         android:layout_width="match_parent"
-        android:layout_height="256dp"
-        card_view:cardElevation="0dp">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
-            android:layout_marginLeft="39dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:textColor="#209cd8"
-                android:lineSpacingExtra="43sp"
-                android:text="My point"
-                android:layout_marginRight="105dp"
-                />
-        </LinearLayout>
+        android:layout_height="match_parent"
+        sl:scale_base_height="560"
+        sl:scale_base_width="360"
+        android:layout_centerHorizontal="true">
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="83dp"
-            android:layout_marginLeft="39dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:textColor="#209cd8"
-                android:lineSpacingExtra="43sp"
-                android:id="@+id/tv_point"
-                android:text="0"
-                android:layout_marginRight="105dp"
-                />
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!---->
-                <!--android:textSize="38sp"-->
-                <!--android:textColor="#209cd8"-->
-                <!--android:lineSpacingExtra="30sp"-->
-                <!--android:text="0"-->
-                <!--android:layout_marginRight="88dp"-->
-                <!--/>-->
-            <Button
-                android:text="환급하기"
-                android:layout_width="93dp"
-                android:layout_height="29dp"
-                android:background="@drawable/refund_button"
-                android:textSize="17sp"
-                android:id="@+id/btn_refund"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:layout_gravity="right"
-                android:layout_marginLeft="55dp"
-                android:layout_marginBottom="10dp" />
-            <!--<Button-->
-                <!--android:text="환급하기"-->
-                <!--android:layout_width="93dp"-->
-                <!--android:layout_height="29dp"-->
-                <!--android:background="@drawable/refund_button"-->
-                <!--android:textSize="17sp"-->
-                <!--android:id="@+id/btn_refund"-->
-                <!--android:gravity="center"-->
-                <!--android:layout_gravity="center|right"-->
-                <!--android:layout_marginLeft="50dp"-->
-                <!--android:textColor="@color/white" />-->
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="121dp"
-            android:layout_marginTop="140dp"
-            android:layout_marginLeft="39dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="12dp">
 
-            <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
+            <android.support.v7.widget.CardView
+                sl:scale_width="360"
+                sl:scale_height="242"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:id="@+id/probar_point" />
+                android:layout_height="match_parent"
+                card_view:cardElevation="0dp">
 
-            <TextView
-                android:text="10,000원 부터 환급 가능합니다."
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17sp"
-                android:textColor="#8e8d8d"
-                android:lineSpacingExtra="51sp"
-                android:layout_marginTop="13dp"
-                android:id="@+id/tv_title2" />
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    sl:scale_base_height="242"
+                    sl:scale_base_width="360"
+                    android:layout_centerHorizontal="true">
 
-            <TextView
-                android:text="사용 포인트 내역"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="13sp"
-                android:textColor="#5e5e5e"
-                android:lineSpacingExtra="55sp"
-                android:id="@+id/tv_title"
-                android:layout_marginTop="20dp"
-                card_view:text="사용 포인트 내역" />
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+                    <TextView
+                        sl:scale_top="44"
+                        sl:scale_left="39"
+                        sl:scale_width="102"
+                        sl:scale_height="26"
+                        sl:scale_textsize="25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#209cd8"
+                        android:text="My point"
+                        />
 
-    <ListView
-        android:id="@+id/list_point"
-        android:layout_width="match_parent"
-        android:layout_height="203dp" />
-    <com.mocoplex.adlib.AdlibAdViewContainer
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="50dp"
-        android:id="@+id/ads"/>
+                    <TextView
+                        sl:scale_top="83"
+                        sl:scale_left="39"
+                        sl:scale_width="119"
+                        sl:scale_height="36"
+                        sl:scale_textsize="38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#209cd8"
+                        android:lineSpacingExtra="43sp"
+                        android:id="@+id/tv_point"
+                        android:text="0"
+                        android:layout_marginRight="105dp"
+                        />
+
+                    <Button
+                        sl:scale_top="85"
+                        sl:scale_left="229"
+                        sl:scale_width="93"
+                        sl:scale_height="29"
+                        sl:scale_textsize="17"
+                        android:text="환급하기"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/refund_button"
+                        android:textSize="17sp"
+                        android:id="@+id/btn_refund"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginBottom="10dp" />
+
+
+                    <ProgressBar
+                        sl:scale_top="133"
+                        sl:scale_left="39.5"
+                        sl:scale_width="280"
+                        sl:scale_height="5"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/probar_point" />
+
+                    <TextView
+                        sl:scale_top="151"
+                        sl:scale_left="39"
+                        sl:scale_width="221"
+                        sl:scale_height="19"
+                        sl:scale_textsize="17"
+                        android:text="10,000원 부터 환급 가능합니다."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#8e8d8d"
+                        android:lineSpacingExtra="51sp"
+                        android:layout_marginTop="13dp"
+                        android:id="@+id/tv_title2" />
+
+                    <TextView
+                        sl:scale_top="217"
+                        sl:scale_left="37"
+                        sl:scale_width="85"
+                        sl:scale_height="13"
+                        sl:scale_textsize="13"
+                        android:text="사용 포인트 내역"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5e5e5e"
+                        android:lineSpacingExtra="55sp"
+                        android:id="@+id/tv_title"
+                        android:layout_marginTop="20dp"
+                        card_view:text="사용 포인트 내역" />
+
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+            </android.support.v7.widget.CardView>
+
+        <ListView
+            sl:scale_top="242"
+            sl:scale_width="360"
+            sl:scale_height="318"
+            android:id="@+id/list_point"
+            android:layout_width="match_parent"
+            android:layout_height="318dp" />
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+
+
+
 
 </LinearLayout>

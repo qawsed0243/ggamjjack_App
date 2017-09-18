@@ -8,51 +8,70 @@
     android:background="@color/white"
     android:weightSum="1"
     android:layout_marginBottom="13dp">
-<ImageView
-    android:layout_marginLeft="40dp"
-    android:layout_width="45sp"
-    android:layout_height="45sp"
-    android:id="@+id/imageview"
-    android:layout_marginTop="2.5sp"
-    android:layout_marginBottom="2.5sp"
-    />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="50sp"
-        android:orientation="vertical"
-        android:layout_marginLeft="29dp"
-        android:layout_marginRight="75dp">
+
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sl:scale_base_height="73"
+        sl:scale_base_width="310"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            sl:scale_top="15"
+            sl:scale_left="40"
+            sl:scale_width="45"
+            sl:scale_height="45"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageview"
+            android:layout_marginTop="2.5sp"
+            android:layout_marginBottom="2.5sp"
+            />
 
         <TextView
+            sl:scale_top="20"
+            sl:scale_left="114"
+            sl:scale_width="52"
+            sl:scale_height="15"
+            sl:scale_textsize="14.4"
             android:id="@+id/textViewDay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:textSize="14sp"
             android:text="날짜"
-            android:layout_weight="0.33"></TextView>
+            android:layout_weight="0.33"/>
 
         <TextView
+            sl:scale_top="40"
+            sl:scale_left="114"
+            sl:scale_width="66"
+            sl:scale_height="14"
+            sl:scale_textsize="14.4"
             android:id="@+id/textViewWhy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:textSize="14sp"
             android:text="이유"
-            android:layout_weight="0.48"></TextView>
-    </LinearLayout>
+            android:layout_weight="0.48"/>
 
-    <TextView
-        android:id="@+id/textViewPoint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:text="포인트"
-        android:textSize="20sp"
-        android:layout_weight="0.16"
-        android:layout_gravity=""
-        android:textColor="#209cd8"
-        android:paddingTop="12.5sp"></TextView>
+        <TextView
+            sl:scale_top="31"
+            sl:scale_left="233"
+            sl:scale_width="69"
+            sl:scale_height="18"
+            sl:scale_textsize="18.8"
+            android:id="@+id/textViewPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="포인트"
+            android:layout_weight="0.16"
+            android:textColor="#209cd8"/>
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
 
 </LinearLayout>
 

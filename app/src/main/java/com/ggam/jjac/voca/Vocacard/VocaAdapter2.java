@@ -49,7 +49,7 @@ public class VocaAdapter2 extends RecyclerView.Adapter<VocaAdapter2.ViewHolder> 
             back = (LinearLayout) view.findViewById(R.id.back);
             goto_dic = (ImageButton) view.findViewById(R.id.goto_dic);
             voca_btn = (ImageButton) view.findViewById(R.id.myvoca_btn);
-            voca_gram = (TextView) view.findViewById(R.id.wordclass);
+            voca_gram = (TextView) view.findViewById(R.id.voca_gram);
         }
     }
 

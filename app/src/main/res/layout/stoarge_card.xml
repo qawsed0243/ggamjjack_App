@@ -1,92 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:card="http://schemas.android.com/apk/res-auto"
-    xmlns:card_view="http://schemas.android.com/tools">
-    <android.support.v7.widget.CardView
-        android:id="@+id/voca_card"
-        card:cardCornerRadius="3dp"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+xmlns:card="http://schemas.android.com/apk/res-auto"
+xmlns:card_view="http://schemas.android.com/tools">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
         android:layout_width="match_parent"
-        android:layout_height="111dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginBottom="21dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        card_view:cardCornerRadius="4dp"
-        card_view:cardElevation="0dp">
-        <LinearLayout
-            android:id="@+id/front"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="5dp">
-            <LinearLayout
+        android:layout_height="match_parent"
+        sl:scale_base_height="151"
+        sl:scale_base_width="360"
+        android:layout_centerHorizontal="true">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/voca_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card:cardCornerRadius="3dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="0dp"
+            sl:scale_height="111"
+            sl:scale_left="16"
+            sl:scale_top="20"
+            sl:scale_width="328">
+
+            <com.ssomai.android.scalablelayout.ScalableLayout
                 android:layout_width="match_parent"
-                android:layout_height="67dp"
-                android:orientation="horizontal">
+                android:layout_height="match_parent"
+                sl:scale_base_height="111"
+                sl:scale_base_width="328"
+                android:layout_centerHorizontal="true">
+
                 <ImageView
-                    android:layout_width="51dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="3"
+                    android:scaleType="fitXY"
                     android:src="@drawable/popupicon_5"
-                    android:scaleType="fitXY"/>
-                <LinearLayout
-                    android:layout_width="256dp"
+                    sl:scale_height="50"
+                    sl:scale_left="12"
+                    sl:scale_top="14"
+                    sl:scale_width="51" />
+
+                <TextView
+                    sl:scale_top="18"
+                    sl:scale_left="76"
+                    sl:scale_width="164"
+                    sl:scale_height="24"
+                    sl:scale_textsize="20.8"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="46dp"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="문제가 도착했어요!"
-                            android:textSize="20.8sp"
-                            android:paddingLeft="13dp"
-                            android:gravity="left|center"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:id="@+id/tv_time"
-                            android:text="time"
-                            android:textSize="13sp"
-                            android:gravity="center"/>
-                    </LinearLayout>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="15dp"
-                        android:layout_weight="3"
-                        android:id="@+id/tv_sentence2"
-                        android:text="깜짝 문제를 풀면 포인트가 팡팡"
-                        android:textSize="14.7sp"
-                        android:textColor="#6d777d"
-                        android:gravity="left|center"
-                        android:paddingLeft="12dp"/>
-                </LinearLayout>
-                </LinearLayout>
-            <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="14dp"
-                android:layout_marginRight="15.5dp"
-                android:id="@+id/progressBar"
-                android:layout_weight="1" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tv_sentence"
-                android:layout_weight="1"
-                android:textSize="12.4sp"
-                android:layout_marginLeft="12dp"
-                android:text="시험 남은시간 10분"/>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+                    android:layout_weight="1"
+                    android:text="문제가 도착했어요!"
+                    android:paddingLeft="13dp"
+                    android:gravity="left|center"/>
+
+
+
+                <TextView
+                    sl:scale_top="46"
+                    sl:scale_left="75"
+                    sl:scale_width="195"
+                    sl:scale_height="15"
+                    sl:scale_textsize="14.7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:id="@+id/tv_sentence2"
+                    android:text="깜짝 문제를 풀면 포인트가 팡팡"
+                    android:textSize="14.7sp"
+                    android:textColor="#6d777d"
+                    android:gravity="left|center"
+                    android:paddingLeft="12dp"/>
+
+                <ProgressBar
+                    sl:scale_top="76"
+                    sl:scale_left="14"
+                    sl:scale_width="298.5"
+                    sl:scale_height="5"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="15.5dp"
+                    android:id="@+id/progressBar"
+                    android:layout_weight="1" />
+
+                <TextView
+                    sl:scale_top="90"
+                    sl:scale_left="12"
+                    sl:scale_width="106"
+                    sl:scale_height="12"
+                    sl:scale_textsize="12.4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_sentence"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:text="시험 남은시간 10분"/>
+
+                <TextView
+                    sl:scale_top="90"
+                    sl:scale_left="230"
+                    sl:scale_width="106"
+                    sl:scale_height="12"
+                    sl:scale_textsize="12.4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:id="@+id/tv_time"
+                    android:text="time"
+                    android:gravity="center"/>
+
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
 </FrameLayout>
