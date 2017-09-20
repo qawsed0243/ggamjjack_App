@@ -94,7 +94,7 @@
                     <com.ssomai.android.scalablelayout.ScalableLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        sl:scale_base_height="19"
+                        sl:scale_base_height="20"
                         sl:scale_base_width="313">
 
                         <ImageView
@@ -103,7 +103,7 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:src="@drawable/cardnumber"
-                            sl:scale_height="19"
+                            sl:scale_height="20"
                             sl:scale_left="11"
                             sl:scale_width="19" />
 
@@ -113,27 +113,24 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:gravity="center"
-                            android:lineSpacingExtra="-3.6sp"
                             android:text="1"
                             android:textColor="#565657"
                             sl:scale_height="20"
                             sl:scale_left="33"
                             sl:scale_textsize="14"
-                            sl:scale_top="5"
+                            sl:scale_top="4"
                             sl:scale_width="20" />
 
                         <TextView
                             android:id="@+id/textView5"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:lineSpacingExtra="-3.6sp"
                             android:text=" / "
                             android:textColor="#565657"
-                            android:textSize="13.8sp"
                             sl:scale_height="20"
                             sl:scale_left="48"
                             sl:scale_textsize="14"
-                            sl:scale_top="5"
+                            sl:scale_top="4"
                             sl:scale_width="18" />
 
                         <TextView
@@ -146,7 +143,7 @@
                             sl:scale_height="20"
                             sl:scale_left="62"
                             sl:scale_textsize="14"
-                            sl:scale_top="5"
+                            sl:scale_top="4"
                             sl:scale_width="20" />
 
                         <ImageView
@@ -158,7 +155,6 @@
                             android:src="@drawable/colck"
                             sl:scale_height="19"
                             sl:scale_left="130"
-
                             sl:scale_width="17" />
 
                         <TextView
