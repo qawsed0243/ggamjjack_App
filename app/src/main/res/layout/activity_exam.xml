@@ -116,9 +116,9 @@
                             android:lineSpacingExtra="-3.6sp"
                             android:text="1"
                             android:textColor="#565657"
-                            sl:scale_height="14"
+                            sl:scale_height="20"
                             sl:scale_left="33"
-                            sl:scale_textsize="13.8"
+                            sl:scale_textsize="14"
                             sl:scale_top="5"
                             sl:scale_width="20" />
 
@@ -130,9 +130,9 @@
                             android:text=" / "
                             android:textColor="#565657"
                             android:textSize="13.8sp"
-                            sl:scale_height="14"
+                            sl:scale_height="20"
                             sl:scale_left="48"
-                            sl:scale_textsize="13.8"
+                            sl:scale_textsize="14"
                             sl:scale_top="5"
                             sl:scale_width="18" />
 
@@ -143,9 +143,9 @@
                             android:lineSpacingExtra="-3.6sp"
                             android:text="10"
                             android:textColor="#565657"
-                            sl:scale_height="14"
+                            sl:scale_height="20"
                             sl:scale_left="62"
-                            sl:scale_textsize="13.8"
+                            sl:scale_textsize="14"
                             sl:scale_top="5"
                             sl:scale_width="20" />
 
@@ -195,9 +195,9 @@
                             android:lineSpacingExtra="-3.6sp"
                             android:text="단어장 추가"
                             android:textColor="#565657"
-                            sl:scale_height="14"
+                            sl:scale_height="20"
                             sl:scale_left="230"
-                            sl:scale_textsize="13.8"
+                            sl:scale_textsize="14"
                             sl:scale_top="2"
                             sl:scale_width="80" />
                     </com.ssomai.android.scalablelayout.ScalableLayout>

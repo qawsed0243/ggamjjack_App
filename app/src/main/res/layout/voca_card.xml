@@ -71,9 +71,9 @@
                 android:text="ad"
                 android:textColor="#ffffff"
                 sl:scale_height="26"
-                sl:scale_left="121.5"
-                sl:scale_textsize="22.8"
-                sl:scale_top="100"
+                sl:scale_left="121"
+                sl:scale_textsize="23"
+                sl:scale_top="110"
                 sl:scale_width="67"/>
             </com.ssomai.android.scalablelayout.ScalableLayout>
         </LinearLayout>
