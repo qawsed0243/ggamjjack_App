@@ -110,8 +110,12 @@ public class VocaAdapter extends RecyclerView.Adapter<VocaAdapter.ViewHolder> im
             @Override
             public void onClick(View v) {
                 if(dbHelper.getListWORD().size() < item.index){
-                    dbHelper.insert(item.index,item.getWord(),item.getMean1(),item.getMean2(), item.getMean3() , item.getGrammar());
-                    Toast.makeText(mcontext,"내 단어장에 추가되었습니다.",Toast.LENGTH_LONG).show();
+                    if(dbHelper.select(item.getWord())==0) {
+                        dbHelper.insert(item.index, item.getWord(), item.getMean1(), item.getMean2(), item.getMean3(), item.getGrammar());
+                        Toast.makeText(mcontext, "내 단어장에 추가되었습니다.", Toast.LENGTH_LONG).show();
+                    }else if(dbHelper.select(item.getWord())==100){
+                        Toast.makeText(mcontext, "이미 내 단어장에 존재합니다.", Toast.LENGTH_LONG).show();
+                    }
                 }else if(dbHelper.getListWORD().size() ==item.index){
                 }else{
                     if(dbHelper.getListWORD().get(item.index).getIndex() == item.getIndex() ){

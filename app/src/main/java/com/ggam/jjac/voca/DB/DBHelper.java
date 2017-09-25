@@ -57,6 +57,18 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    public int select(String english) {
+        SQLiteDatabase db = getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM MYWORD WHERE english='" + english + "';", null);
+        // 입력한 항목과 일치하는 검색
+        if(cursor.moveToFirst()){
+            cursor.close();
+            return 100;
+        }
+        cursor.close();
+        return 0;
+    }
+
     public void drop(String tablename){
         SQLiteDatabase db = getWritableDatabase();
         db.execSQL("DROP TABLE MYWORD");
