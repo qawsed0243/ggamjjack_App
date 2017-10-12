@@ -153,7 +153,7 @@ public class RefundActivity extends BaseActivity {
                     now_point = Integer.parseInt(POINT);
                     if (now_point < out_point) {
                         Toast.makeText(getApplicationContext(), "잔여 포인트를 확인하세요", Toast.LENGTH_LONG).show();
-                    } else if (out_point < 10000) {
+                    } else if (out_point < 100000) {
                         Toast.makeText(getApplicationContext(), "최소 환전 금액은 10000포인트 입니다.", Toast.LENGTH_LONG).show();
                     } else {
                         Log.i("editText ? :", name + " , " + no + " ," + money + ", " + bank);

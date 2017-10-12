@@ -108,22 +108,22 @@ public class ResultActivity extends AppCompatActivity{
                     if(Storage_Activity.exam==100)
                     {
                         if(Storage_Activity.num==1||Storage_Activity.num==3) {
-                            random =5;
+                            random =10;
                         }
                         else if(Storage_Activity.num==2||Storage_Activity.num==5) {
-                            random = 10;
+                            random = 15;
                         }
                         else if(Storage_Activity.num==3||Storage_Activity.num==6) {
-                            random = 15;
+                            random = 20;
                         }
                     }else {
                         //난이도에 따른 포인트 적립
                         if (TabFragment3.num == 1 || TabFragment3.num == 4) {
-                            random = (int) ((Math.random() * 1000) + 1) % 2;
+                            random = (int) ((Math.random() * 1000) + 1) % 10+1;
                         } else if (TabFragment3.num == 2 || TabFragment3.num == 5) {
-                            random = (int) ((Math.random() * 999) + 1) % 3;
+                            random = (int) ((Math.random() * 121) + 1) % 11+5;
                         } else if (TabFragment3.num == 3 || TabFragment3.num == 6) {
-                            random = (int) ((Math.random() * 1000) + 1) % 4;
+                            random = (int) ((Math.random() * 121) + 1) % 11+10;
                         }
                     }
 

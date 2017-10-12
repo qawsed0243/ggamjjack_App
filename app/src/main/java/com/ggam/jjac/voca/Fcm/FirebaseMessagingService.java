@@ -20,6 +20,9 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
 
     private static final String TAG = "MyFirebaseMsgService";
 
+    public static boolean OnOffPush = true;
+
+
     /**
      * Called when message is received.
      *
@@ -28,7 +31,10 @@ public class FirebaseMessagingService extends com.google.firebase.messaging.Fire
     // [START receive_message]
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
-        sendNotification(remoteMessage.getData().get("message"));
+
+        if (OnOffPush == true){
+            sendNotification(remoteMessage.getData().get("message"));
+        }
 
     }
     // [END receive_message]

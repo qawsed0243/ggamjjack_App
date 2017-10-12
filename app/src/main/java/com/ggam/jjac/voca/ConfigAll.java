@@ -30,4 +30,12 @@ public class ConfigAll {
     public final static String PointOutAddr = "http://13.112.126.41/point_out.php";
     public final static String PointInsert = "http://13.112.126.41/point_insert.php";
 
+    public final static String NoticePage = "http://www.ggamzzak.com/update";
+    public final static String HowPage = "http://www.ggamzzak.com/how";
+    public final static String QnaPage = "http://www.ggamzzak.com/qna";
+    public final static String PrivatePage = "http://www.ggamzzak.com/private";
+    public final static String UsePage = "http://www.ggamzzak.com/use";
+    public final static String FaqPage = "http://www.ggamzzak.com/faq";
+
+
 }

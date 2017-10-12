@@ -212,8 +212,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         sl:scale_base_height="348"
-                        sl:scale_base_width="328"
-                        >
+                        sl:scale_base_width="328">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -222,8 +221,8 @@
                             android:gravity="center"
                             android:textColor="#209cd8"
                             android:text="Advertise"
-                            sl:scale_left="68"
-                            sl:scale_width="192"
+                            sl:scale_left="16"
+                            sl:scale_width="300"
                             sl:scale_height="61"
                             sl:scale_textsize="41.5"
                             />

@@ -16,15 +16,15 @@ public class TabFragment4 extends Fragment {
     //private AdView mAdView;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tab_fragment4, container, false);
-        Button x = (Button) view.findViewById(R.id.button3);
-        x.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                long now = System.currentTimeMillis();
-                StorageDBHelper ExdbManager = new StorageDBHelper(getContext().getApplicationContext(), "EXAM.db", null, 1);
-                ExdbManager.insert((int)now);
-            }
-        });
+//        Button x = (Button) view.findViewById(R.id.button3);
+//        x.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                long now = System.currentTimeMillis();
+//                StorageDBHelper ExdbManager = new StorageDBHelper(getContext().getApplicationContext(), "EXAM.db", null, 1);
+//                ExdbManager.insert((int)now);
+//            }
+//        });
         /*
         Button x1 = (Button) view.findViewById(R.id.personaldb);
         Button x2 = (Button) view.findViewById(R.id.accessterm);

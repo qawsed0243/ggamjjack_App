@@ -14,101 +14,149 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_margin="40dp"
-        sl:scale_base_height="503"
+        sl:scale_base_height="560"
         sl:scale_base_width="360">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="7"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/tv_noti"
-                android:text="공지사항"
-                android:textSize="30dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="7"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/tv_logout"
-                android:onClick="onClick"
-                android:text="로그아웃"
-                android:textSize="30dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="7"
-                android:textSize="30dp"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/tv_lv"
-                android:text="시험지 난이도"
-                android:textSize="30dp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <ImageView
-                android:layout_width="43dp"
-                android:layout_height="match_parent" />
 
-            <TextView
-                android:layout_width="190dp"
-                android:layout_height="match_parent"
-                android:id="@+id/tv_alarm"
-                android:text="알림"
-                android:textSize="30dp"/>
-
-            <Switch
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/mSwtich"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:textColor="#ffffff"
+            sl:scale_top="46"
+            sl:scale_left="41"
+            sl:scale_width="102"
+            sl:scale_height="26"
+            sl:scale_textsize="23.3"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="7"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="고객센터"
-                android:textSize="30dp"/>
-        </LinearLayout>
+            android:layout_weight="1"
+            android:id="@+id/tv_noti"
+            android:text="공지사항"/>
+
+        <TextView
+            android:textColor="#ffffff"
+            sl:scale_top="90"
+            sl:scale_left="41"
+            sl:scale_width="102"
+            sl:scale_height="26"
+            sl:scale_textsize="23.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_use"
+            android:onClick="onClick"
+            android:text="사용방법"/>
+
+
+
+        <TextView
+            android:textColor="#ffffff"
+            sl:scale_top="140"
+            sl:scale_left="41"
+            sl:scale_width="102"
+            sl:scale_height="26"
+            sl:scale_textsize="23.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_lv"
+            android:onClick="onClick"
+            android:text="시험지 난이도"/>
+
+
+
+
+        <TextView
+            android:textColor="#ffffff"
+            sl:scale_top="180"
+            sl:scale_left="41"
+            sl:scale_width="102"
+            sl:scale_height="26"
+            sl:scale_textsize="23.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_logout"
+            android:onClick="onClick"
+            android:text="로그아웃"/>
+
+
+
+
+        <TextView
+            android:textColor="#ffffff"
+            sl:scale_top="220"
+            sl:scale_left="41"
+            sl:scale_width="102"
+            sl:scale_height="26"
+            sl:scale_textsize="23.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알림"/>
+
+        <TextView
+            android:textColor="#ffffff"
+            sl:scale_top="220"
+            sl:scale_left="250"
+            sl:scale_width="102"
+            sl:scale_height="26"
+            sl:scale_textsize="23.3"
+            android:onClick="onClick"
+            android:id="@+id/tv_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON"/>
+
+
+
+        <TextView
+            android:textColor="#ffffff"
+            sl:scale_top="260"
+            sl:scale_left="41"
+            sl:scale_width="102"
+            sl:scale_height="26"
+            sl:scale_textsize="23.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_center"
+            android:onClick="onClick"
+            android:text="고객센터"/>
+
+        <TextView
+            android:textColor="#ffffff"
+            sl:scale_top="300"
+            sl:scale_left="41"
+            sl:scale_width="130"
+            sl:scale_height="26"
+            sl:scale_textsize="23.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_indi"
+            android:onClick="onClick"
+            android:text="개인정보취급방침"/>
+
+        <TextView
+            android:textColor="#ffffff"
+            sl:scale_top="340"
+            sl:scale_left="41"
+            sl:scale_width="102"
+            sl:scale_height="26"
+            sl:scale_textsize="23.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_serviceuse"
+            android:onClick="onClick"
+            android:text="서비스이용약관"/>
+
+        <TextView
+            android:textColor="#ffffff"
+            sl:scale_top="380"
+            sl:scale_left="41"
+            sl:scale_width="102"
+            sl:scale_height="26"
+            sl:scale_textsize="23.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_faq"
+            android:onClick="onClick"
+            android:text="FAQ"/>
+
+
+
     </com.ssomai.android.scalablelayout.ScalableLayout>
 </FrameLayout>
 

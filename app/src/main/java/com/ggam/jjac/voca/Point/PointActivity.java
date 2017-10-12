@@ -292,7 +292,7 @@ public class PointActivity extends BaseActivity {
 
 
                                     tv_point.setText(POINT+"P");
-                                    int x = Integer.parseInt(POINT)/100;
+                                    int x = Integer.parseInt(POINT)/1000;
                                     pro_point.setProgress(x);
 
                                     dialog_.cancel();

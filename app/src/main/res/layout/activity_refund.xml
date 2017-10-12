@@ -84,7 +84,7 @@
             android:lines="1"
             android:singleLine="true"
             android:maxLength="8"
-            android:hint="10000"
+            android:hint="100000"
             android:digits="0123456789"
             sl:scale_textsize="35"
             sl:scale_top="650"

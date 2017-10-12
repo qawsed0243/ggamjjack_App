@@ -4,15 +4,14 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:name="com.ggam.jjac.voca.Kaka5.GlobalApplication"
+        android:name=".Kaka5.GlobalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -23,12 +22,13 @@
         <activity
             android:name="com.mocoplex.adlib.AdlibDialogActivity"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
-            android:theme="@android:style/Theme.Translucent"/>
+            android:theme="@android:style/Theme.Translucent" />
         <activity
             android:name="com.mocoplex.adlib.AdlibVideoPlayer"
             android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
-            android:theme="@android:style/Theme.NoTitleBar"/>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <!-- 애드립 사용을 위해 꼭 추가해주세요. -->
+
 
         <!-- facebook ads -->
         <meta-data
@@ -48,12 +48,12 @@
             android:name="com.kakao.sdk.AppKey"
             android:value="@string/kakao_app_key" />
         <!-- FCM -->
-        <service android:name="com.ggam.jjac.voca.Fcm.FirebaseMessagingService">
+        <service android:name=".Fcm.FirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="com.ggam.jjac.voca.Fcm.FirebaseInstanceIDService">
+        <service android:name=".Fcm.FirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
@@ -71,7 +71,7 @@
 
         <!-- 시작 splash 화면 -->
         <activity
-            android:name="com.ggam.jjac.voca.Splash"
+            android:name=".Splash"
             android:screenOrientation="portrait"
             android:theme="@style/Ggam">
             <intent-filter>
@@ -81,53 +81,71 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.ggam.jjac.voca.Frag.FragMain"
+            android:name=".Frag.FragMain"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name="com.ggam.jjac.voca.Kaka5.LoginActivity"
+            android:name=".Kaka5.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ggam.jjac.voca.Kaka5.SignupActivity"
+            android:name=".Kaka5.SignupActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.ggam.jjac.voca.Vocacard.Toe_low_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Vocacard.Toe_mid_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Vocacard.Toe_high_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Vocacard.Su_low_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Vocacard.Su_mid_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Vocacard.Su_high_Activity"
-            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ggam.jjac.voca.Vocacard.DicActivity"
+            android:name=".Vocacard.Toe_low_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vocacard.Toe_mid_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vocacard.Toe_high_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vocacard.Su_low_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vocacard.Su_mid_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vocacard.Su_high_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vocacard.DicActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Dialog" />
-        <activity android:name="com.ggam.jjac.voca.Exam.ExamActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Exam.ResultActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Exam_Stoarge.Storage_Activity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Setting.SetMain"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Point.PointActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Setting.Notice.NoticeList"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Setting.FAQ.FAQList"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Point.RefundActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".BaseActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Vocacard.myvoca"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.ggam.jjac.voca.Setting.LevelActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Exam.ExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Exam.ResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Exam_Stoarge.Storage_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Setting.SetMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Point.PointActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Setting.Notice.NoticeList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Setting.FAQ.FAQList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Point.RefundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vocacard.myvoca"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Setting.LevelActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".webview"></activity>
     </application>
 
 </manifest>

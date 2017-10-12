@@ -92,7 +92,7 @@
                         sl:scale_width="221"
                         sl:scale_height="19"
                         sl:scale_textsize="17"
-                        android:text="10,000원 부터 환급 가능합니다."
+                        android:text="100,000포인트 부터 환급 가능합니다."
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="#8e8d8d"
